@@ -1,0 +1,69 @@
+.outerbox{
+	width:900px;
+	height:300px;
+	border:2px solid black;
+	margin:0 auto 20px;
+}
+
+/* Demonstrating the difference between different box-sizing options */
+#outerbox-1 .innerbox{
+	width:100%;
+	height:50%;
+	border:10px dashed red;
+	box-sizing: border-box;
+}
+
+/* Fixed vs absolute vs relative positioning */
+#outerbox-2{
+	position: relative;
+
+}
+#outerbox-2 .innerbox{
+	/*width:10%;
+	height:10%; */
+}
+#outerbox-2 #innerbox-1{
+	background:red;
+	position:fixed;
+	/*fixed positioning*/
+	top: 0;
+	left: 0;
+
+}
+#outerbox-2 #innerbox-2{
+	background:yellow;
+	position: relative;
+	top: 100px;
+	/*relative positioning*/
+}
+#outerbox-2 #innerbox-3{
+	background:blue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	/*absolute positioning*/
+}
+
+/* CSS float */
+#outerbox-3 .innerbox{
+	width:33.33333%;
+	/*CSS float */
+	float: left;
+}
+#outerbox-3 #innerbox-1{
+	background:red;
+	height:25%;
+}
+#outerbox-3 #innerbox-2{
+	background:yellow;
+	height:50%;
+}
+#outerbox-3 #innerbox-3{
+	background:blue;
+	height:25%;
+}
+
+
+
